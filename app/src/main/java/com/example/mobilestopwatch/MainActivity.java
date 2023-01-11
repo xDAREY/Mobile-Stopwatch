@@ -1,8 +1,10 @@
-gitpackage com.example.mobilestopwatch;
+package com.example.mobilestopwatch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.mobilestopwatch.R;
 
 public class MainActivity extends AppCompatActivity {
 
