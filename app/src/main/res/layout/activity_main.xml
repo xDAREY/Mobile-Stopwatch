@@ -18,6 +18,7 @@
             android:id="@+id/TimerId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="200dp"
             android:text="0:00:00"
@@ -26,24 +27,28 @@
             tools:ignore="HardcodedText" />
 
 
-
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/StopBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="-130dp"
             android:layout_alignBottom="@id/TimerId"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginEnd="311dp"
+            android:layout_marginBottom="-109dp"
             android:backgroundTint="#FF0000"
             android:onClick="onStop"
             android:src="@drawable/ic_stop" />
-
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/StartBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="-30dp"
             android:layout_alignBottom="@id/TimerId"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="198dp"
+            android:layout_marginBottom="-208dp"
             android:backgroundTint="#34DC0D"
             android:onClick="onStart"
             android:src="@drawable/ic_start" />
@@ -52,8 +57,10 @@
             android:id="@+id/ResetBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="-230dp"
-            android:layout_toStartOf="@+id/TimerId"
+            android:layout_alignBottom="@id/TimerId"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="167dp"
+            android:layout_marginBottom="-334dp"
             android:backgroundTint="#F4E006"
             android:onClick="onReset"
             android:src="@drawable/ic_reset" />
