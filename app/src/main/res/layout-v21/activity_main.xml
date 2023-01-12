@@ -26,23 +26,41 @@
             tools:ignore="HardcodedText" />
 
 
+<!--            android:id="@+id/Timer_Holder"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/TimerId"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginTop="100dp"-->
+<!--            android:layout_marginEnd="-130dp"-->
+<!--            android:layout_marginBottom="450dp"-->
+<!--            android:layout_toStartOf="@+id/TimerId"-->
+<!--            android:src="@drawable/ic_timercontainer" />-->
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/StopBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/TimerId"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="100dp"
             android:layout_marginEnd="-130dp"
+            android:layout_marginBottom="450dp"
             android:layout_toStartOf="@+id/TimerId"
             android:backgroundTint="#FF0000"
             android:onClick="onStop"
-            android:src="@drawable/ic_stop" />
-
+            android:src="@drawable/ic_stop"
+            tools:ignore="ContentDescription,UsingOnClickInXml" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/StartBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/TimerId"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="100dp"
             android:layout_marginEnd="-30dp"
+            android:layout_marginBottom="450dp"
             android:layout_toStartOf="@+id/TimerId"
             android:backgroundTint="#34DC0D"
             android:onClick="onStart"
@@ -52,7 +70,11 @@
             android:id="@+id/ResetBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/TimerId"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="100dp"
             android:layout_marginEnd="-230dp"
+            android:layout_marginBottom="450dp"
             android:layout_toStartOf="@+id/TimerId"
             android:backgroundTint="#F4E006"
             android:onClick="onReset"
