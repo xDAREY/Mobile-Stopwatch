@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="-130dp"
-            android:layout_toStartOf="@+id/TimerId"
+            android:layout_alignBottom="@id/TimerId"
             android:backgroundTint="#FF0000"
             android:onClick="onStop"
             android:src="@drawable/ic_stop" />
@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="-30dp"
-            android:layout_toStartOf="@+id/TimerId"
+            android:layout_alignBottom="@id/TimerId"
             android:backgroundTint="#34DC0D"
             android:onClick="onStart"
             android:src="@drawable/ic_start" />
