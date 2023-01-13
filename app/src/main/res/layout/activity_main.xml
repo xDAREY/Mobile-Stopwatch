@@ -10,59 +10,92 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:padding="2dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-70dp">
 
 
         <TextView
             android:id="@+id/TimerId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="200dp"
-            android:text="0:00:22"
-            android:textColor="@color/black"
-            android:textSize="64sp"
-            tools:ignore="HardcodedText" />
-
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/StartBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="185dp"
-            android:layout_marginTop="400dp"
-            android:backgroundTint="#34DC0D"
-            android:onClick="onStart"
-            android:src="@drawable/ic_start" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/StopBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="238dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="64dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginTop="400dp"
-            android:layout_toStartOf="@+id/StartBtn"
-            android:backgroundTint="#FF0000"
-            android:onClick="onStop"
-            android:src="@drawable/ic_stop" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/ResetBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="81dp"
-            android:layout_marginTop="400dp"
-            android:backgroundTint="#F4E006"
-            android:onClick="onReset"
-            android:src="@drawable/ic_reset" />
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="264dp"
+            android:layout_marginEnd="72dp"
+            android:text="@string/counter"
+            android:textColor="@color/black"
+            android:textSize="64sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/StartBtn"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="380dp"
+                android:background="@drawable/ic_start"
+                android:backgroundTint="#34DC0D"
+                android:clickable="true"
+                android:contentDescription="@string/todo"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/StopBtn"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="380dp"
+                android:background="@drawable/ic_stop"
+                android:backgroundTint="#FF0000"
+                android:clickable="true"
+                android:contentDescription="@string/to"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--suppress AndroidDomInspection -->
+            <ImageView
+                android:id="@+id/ResetBtn"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="385dp"
+                android:background="@drawable/ic_reset"
+                android:backgroundTint="#FFD500"
+                android:clickable="true"
+                android:contentDescription="@string/do"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+
 
     </RelativeLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Mobile Stopwatch</string>
+    <string name="app_name">Stopwatch</string>
+    <string name="counter">0:00:01</string>
+    <string name="todo">TODO</string>
+    <string name="to">TO</string>
+    <string name="do">DO</string>
 </resources>
