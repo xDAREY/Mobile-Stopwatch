@@ -1,5 +1,5 @@
 # Mobile-Stopwatch 
-This is a timer also known as "Stopwatch" built only for the android mobile platform.
+This is a timer app also known as "Stopwatch" built only for the android mobile platform.
 it consists of only three major features "The start", "The stop" & "The reset" button which allows users interact with the
 timer while in running state.
 
